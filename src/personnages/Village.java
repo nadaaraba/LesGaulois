@@ -42,16 +42,19 @@ public class Village {
 	
 
 	public void afficherVillage() {
-		
+		System.out.println("Dans le village du chef " + chef.getNom() + " habitent :");
+		for (int i = 0;i<nbVillageois;i++) {
+			System.out.println(villageois[i].getNom());
+		}
 	}
 	
 	public static void main(String[] args) {
-		Village village = new Village("Village des indéstructibles",30);
+		Village village = new Village("Village des indï¿½structibles",30);
 		Gaulois abraracourcix= new Gaulois("Abraracourcix",6);
 		village.setChef(abraracourcix);
-		Gaulois asterix= new Gaulois("Astérix",8);
+		Gaulois asterix= new Gaulois("Astï¿½rix",8);
 		village.ajouterVillageois(asterix);
-		Gaulois obelix= new Gaulois("Obélix", 25);
+		Gaulois obelix= new Gaulois("Obï¿½lix", 25);
 		village.ajouterVillageois(obelix);
 
 		
